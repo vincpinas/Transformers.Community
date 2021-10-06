@@ -1,3 +1,12 @@
-.gray-bg-200 {
-    background-color: rgb(200, 200, 200);
+:root {
+    --purple: #735BF8;
+    --light-purple: #A98DE9;
+    --light-gray: #FAFDFF;
+    --orange: #FEA680;
+    --dark-orange: #E39031;
+    --light-orange: #FEC685;
+}
+
+.bg-purple {
+    background-color: var(--purple);
 }
