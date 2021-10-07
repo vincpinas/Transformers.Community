@@ -1,12 +1,55 @@
 :root {
     --purple: #735BF8;
     --light-purple: #A98DE9;
-    --light-gray: #FAFDFF;
+    --light-gray: #f3efef;
     --orange: #FEA680;
     --dark-orange: #E39031;
     --light-orange: #FEC685;
 }
 
-.bg-purple {
+body {
+    background-color: var(--light-gray);
+}
+
+.c-bg-purple {
     background-color: var(--purple);
+}
+
+.c-logo-80 {
+    max-width: 150px;
+}
+
+.c-titles-font {
+   font-family: 'Spartan', sans-serif;
+}
+
+.c-text-font {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.c-tw {
+    color: white;
+}
+
+.c-tb {
+    color: black;
+}
+
+.c-imp-button {
+    color: white;
+    background-color: var(--dark-orange);
+    outline: none;
+
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+.c-underline {
+    text-decoration: underline var(--dark-orange);
 }
