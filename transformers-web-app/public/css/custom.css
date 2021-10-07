@@ -27,8 +27,17 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-.c-tw {
+.c-link-cw {
     color: white;
+    transition: all 0.5s;
+}
+
+.c-link-cw:hover {
+    color: black;
+}
+
+.c-tw {
+    color: white !important;
 }
 
 .c-tb {

@@ -20,21 +20,21 @@
                 <img src="./images/logo.svg" class="c-logo-80 d-none d-lg-block">
               </a>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 c-tw">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link c-tw"  href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/feed">Feed</a>
+                    <a class="nav-link c-tw" href="/feed">Feed</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Over Ons</a>
+                    <a class="nav-link c-tw" href="#">Over Ons</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Word Transformer!</a>
+                    <a class="nav-link c-tw" href="#">Word Transformer!</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
+                    <a class="nav-link c-tw" href="#">Contact</a>
                   </li>
                 </ul>
                 <div class="d-flex justify-content-end align-items-center">
@@ -44,7 +44,7 @@
                                 <a href="{{ url('/dashboard') }}" class="">Dashboard</a>
                             @else
                                 @if (Route::has('register'))
-                                    <a href="{{ route('register') }}" class="btn c-titles-font">Register</a>
+                                    <a href="{{ route('register') }}" class="btn c-titles-font c-link-cw">Register</a>
                                 @endif
                                     <a href="{{ route('login') }}" class="btn c-titles-font c-imp-button m-2">Log in</a>
                             @endauth
