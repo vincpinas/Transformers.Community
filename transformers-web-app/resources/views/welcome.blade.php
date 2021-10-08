@@ -6,7 +6,9 @@
         <title>Transformers.Community</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Spartan:wght@800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Spartan:wght@800;900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/app.css">
     </head>
     <body class="antialiased c-text-font">
@@ -46,7 +48,7 @@
                                 @if (Route::has('register'))
                                     <a href="{{ route('register') }}" class="btn c-titles-font c-link-cw">Register</a>
                                 @endif
-                                    <a href="{{ route('login') }}" class="btn c-titles-font c-imp-button m-2">Log in</a>
+                                    <a href="{{ route('login') }}" class="btn c-titles-font c-imp-button m-2">Login</a>
                             @endauth
                         </div>
                     @endif
@@ -57,20 +59,32 @@
 
 
         {{-- Hero content of main page. --}}
-        <div class="d-flex c-bg-purple p-20">
-            <div >
+        <div class="d-flex c-bg-purple pt-20 pl-20 c-tw">
+            <div>
                 <span class="c-titles-font">
-                    <h2>Life sucks sometimes.</h2>
+                    <h1>Life sucks <br> sometimes.</h1>
                     <h3>Maar je staat er niet alleen voor.</h3>
                 </span>
                 <p class="c-text-font">
-                    De Transformers Community is er voor jongeren die zelfverzekerd willen zijn en tegenslagen omzetten in kracht. We doen dit samen: zo leren we meer en helpen we elkaar om te groeien.
+                    De Transformers Community is er voor jongeren die zelfverzekerd willen zijn en tegenslagen omzetten in <br> kracht. We doen dit samen: zo leren we meer en helpen we elkaar om te groeien.
                 </p>
+                <a href="{{ route('login') }}" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Naar community</a>
             </div>
         </div>
         <img src="./images/wave1.svg">
 
 
         {{--  --}}
+        <div class="c-tb text-center pb-5">
+          <h2 class="c-titles-font fw-bold">Wij zijn een groeiende beweging van jongeren die zich <br> inzet voor <span class="c-underline">mentale gezondheid.</span></h2>
+          <br>
+          <p>
+            We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid.<br>
+            <span class="fw-bold">Daar willen wij samen verandering in brengen!</span> We zijn een community van jongeren die<br>
+            <span class="fw-bold">ervaringen en tips</span> uitwisselt op het gebied van <span class="fw-bold">mentale gezondheid</span> en persoonlijke<br>
+            ontwikkeling. Zo creëren we meer openheid <span class="fw-bold">en helpen we elkaar om te groeien.</span>
+          </p>
+          <a href="#}" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Onze missie en visie</a>
+        </div>
     </body>
 </html>

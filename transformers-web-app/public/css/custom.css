@@ -1,9 +1,9 @@
 :root {
     --purple: #735BF8;
     --light-purple: #A98DE9;
-    --light-gray: #f3efef;
+    --light-gray: #f6f6f6;
     --orange: #FEA680;
-    --dark-orange: #E39031;
+    --dark-orange: #db821d;
     --light-orange: #FEC685;
 }
 
@@ -16,7 +16,7 @@ body {
 }
 
 .c-logo-80 {
-    max-width: 150px;
+    max-width: 180px;
 }
 
 .c-titles-font {
@@ -33,7 +33,7 @@ body {
 }
 
 .c-link-cw:hover {
-    color: black;
+    color: #2d245d;
 }
 
 .c-tw {
@@ -49,6 +49,10 @@ body {
     background-color: var(--dark-orange);
     outline: none;
 
+}
+
+h1 {
+    font-size: 3em;
 }
 
 h2 {
