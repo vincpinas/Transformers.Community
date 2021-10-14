@@ -81,22 +81,22 @@
                 <div class="carousel-item active">
                   <img src="https://static.wixstatic.com/media/e72157_db107074d02f49ee85c5460d7358244e~mv2.png/v1/fill/w_796,h_450,al_c,q_85,usm_0.66_1.00_0.01/e72157_db107074d02f49ee85c5460d7358244e~mv2.webp" class="d-block mx-auto w-auto" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Lisa (24 jaar)</h5>
-                    <p>Some representative placeholder content for the first slide.</p>
+                    <h5>Lisa (24 jaar):</h5>
+                    <p>Ik kan mij zo gemakkelijk aanpassen aan anderen, dat ik mijzelf op een gegeven moment kwijt was geraakt.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="https://static.wixstatic.com/media/e72157_eaee7f30427e47e0893180b6a2cac833~mv2.png/v1/fill/w_796,h_450,al_c,q_85,usm_0.66_1.00_0.01/e72157_eaee7f30427e47e0893180b6a2cac833~mv2.webp" class="d-block mx-auto w-auto" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Elwin (29 jaar)</h5>
-                    <p>Some representative placeholder content for the second slide.</p>
+                    <h5>Elwin (29 jaar):</h5>
+                    <p>Ik ben opgegroeid met de overtuiging dat wat ik vond er toch niet toe deed, maar ook dat wat ik voelde niet gehoord hoefde te worden.</p>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <img src="https://static.wixstatic.com/media/e72157_c01472345d2b461381e28a781dc86d9f~mv2.png/v1/fill/w_796,h_450,al_c,q_85,usm_0.66_1.00_0.01/e72157_c01472345d2b461381e28a781dc86d9f~mv2.webp" class="d-block mx-auto w-auto" alt="...">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Yasmine (22 jaar)</h5>
-                    <p>Some representative placeholder content for the third slide.</p>
+                    <h5>Yasmine (22 jaar):</h5>
+                    <p>Ik heb gewoon bijna het gevoel dat het niet meer oké is om eerst jezelf op nummer één te zetten.</p>
                   </div>
                 </div>
               </div>
