@@ -1,5 +1,6 @@
 :root {
     --purple: #735BF8;
+    --purple-90op: rgba(115, 91, 248, 0.85);
     --light-purple: #A98DE9;
     --light-gray: #f6f6f6;
     --orange: #FEA680;
@@ -65,4 +66,20 @@ h3 {
 
 .c-underline {
     text-decoration: underline var(--dark-orange);
+}
+
+@media only screen and (min-width: 0px) and (max-width: 819px) {
+    .d-sm-none {
+        display: none !important;
+    }
+
+    .wi-sm-50 {
+        max-width: 50%;
+    }
+}
+
+@media only screen and (min-width: 820px) {
+    .wi-md-30 {
+        max-width: 30%;
+    }
 }

@@ -59,7 +59,7 @@
 
 
         {{-- Hero content of main page. --}}
-        <div class="d-flex c-bg-purple pt-20 pl-20 c-tw">
+        <div class="d-flex c-bg-purple pt-20 c-tw justify-content-around align-items-center">
             <div>
                 <span class="c-titles-font">
                     <h1>Life sucks <br> sometimes.</h1>
@@ -71,7 +71,7 @@
                 <a href="{{ route('login') }}" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Naar community</a>
             </div>
 
-            <div id="carouselExampleCaptions" class="carousel slide d-sm-none d-md-block ps-2 pe-2" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="carousel slide d-sm-none d-lg-block ps-2 pe-2" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -105,9 +105,9 @@
         <img src="./images/wave1.svg">
 
 
-        {{--  --}}
-        <div class="c-tb text-center pb-2 pt-2">
-          <h2 class="c-titles-font fw-bold">Wij zijn een groeiende beweging van jongeren die zich <br> inzet voor <span class="c-underline">mentale gezondheid.</span></h2>
+        {{-- Mission / Vision Section  --}}
+        <div class="c-tb text-center">
+          <h2 class="c-titles-font">Wij zijn een groeiende beweging van jongeren die zich <br> inzet voor <span class="c-underline">mentale gezondheid.</span></h2>
           <br>
           <p>
             We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid.<br>
@@ -115,10 +115,40 @@
             <span class="fw-bold">ervaringen en tips</span> uitwisselt op het gebied van <span class="fw-bold">mentale gezondheid</span> en persoonlijke<br>
             ontwikkeling. Zo creëren we meer openheid <span class="fw-bold">en helpen we elkaar om te groeien.</span>
           </p>
-          <a href="#}" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Onze missie en visie</a>
+          <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Onze missie en visie</a>
         </div>
-
-        {{-- --}}
+        <div class="c-tb d-flex justify-content-around align-items-center" style="margin-top: 8rem">
+          <div class="wi-sm-50 wi-md-30">
+            <h3>De online community</h3>
+            <h2 class="c-titles-font pt-3">Praat over dingen die je eerder nergens kwijt kon.</h2>
+            <p class="pt-3">In onze online community kan je binnen een veilige omgeving (anoniem) jouw ervaringen
+               en gevoelens delen. Hier helpen en steunen we elkaar. 
+               Ook worden er wekelijks praktische tips gedeeld die jou helpen om zelfverzekerd te zijn
+               en om te gaan met moeilijke situaties.
+            </p>
+            <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Meld je gratis aan!</a>
+          </div>
+          <div style="padding:15rem;background-color:var(--purple-90op);border-radius:5px;" class="d-sm-none d-md-block"></div>
+        </div>
         <img src="./images/wave2.svg">
+
+
+        {{-- Want to make a impact section --}}
+        <img src="./images/wave3.svg">
+        <div class="d-flex p-5 justify-content-center align-items-center flex-column">
+          <div class="text-center wi-sm-50 wi-md-30">
+            <h2 class="c-titles-font">Wil je een impact maken?</h2>
+            <p class="pt-3">Het is onze missie om kennis over mentale gezondheid mainsteam te maken en jongeren te empoweren om mentaal gezond te zijn. <span class="fw-bold">En daar hebben wij jou bij nodig!</span></p>
+            <br>
+            <p>Wil jij je ook inzetten voor een samenleving waarin onze mentale gezondheid centraal staat?
+               Meld je dan aan als vrijwilliger! Heb je daar geen tijd voor maar wil je toch een beetje bijdragen?
+               Dan kan je altijd nog doneren!
+            </p>
+          </div>
+          <div class="d-flex flex-sm-column flex-md-row justify-content-between">
+            <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5 m-4">Word Transformer</a>
+            <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5 m-4">Doneer</a>
+          </div>
+        </div>
     </body>
 </html>
