@@ -3,7 +3,7 @@
     --purple-90op: rgba(115, 91, 248, 0.85);
     --light-purple: #A98DE9;
     --light-gray: #f6f6f6;
-    --orange: #FEA680;
+    --orange: #ff9c71;
     --dark-orange: #db821d;
     --light-orange: #FEC685;
 }
@@ -66,6 +66,27 @@ h3 {
 
 .c-underline {
     text-decoration: underline var(--dark-orange);
+}
+
+.hoverbutton {
+    font-size: 2em;
+    padding: 1rem 1.5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+	box-shadow: 0px 0px 15px 2px #9c9c9c;
+	cursor:pointer;
+	color: var(--orange);
+	text-decoration:none;
+	text-shadow: 0px 2px 3px #3333338e;
+    background-color: var(--light-gray);
+    transition: all 0.5s ease-in-out;
+}
+
+.hoverbutton:hover {
+    background-color: rgb(238, 238, 238);
 }
 
 @media only screen and (min-width: 0px) and (max-width: 819px) {
