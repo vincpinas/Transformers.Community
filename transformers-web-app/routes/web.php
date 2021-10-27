@@ -1,7 +1,11 @@
 <?php
 
+use App\Models\Post;
+use App\Models\User;
+use App\Models\Category;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TopicController;
+require __DIR__.'/auth.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +18,7 @@ use App\Http\Controllers\TopicController;
 |
 */
 
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,6 +27,27 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
-require __DIR__.'/auth.php';
+Route::get('/feed', function () {
 
-Route::get('/topic/{topic}', [TopicController::class, 'showTopic']);
+    return view('posts', [
+        'posts' => Post::latest()->get()
+    ]);
+});
+
+Route::get('posts/{post:slug}', function (Post $post) {
+    return view('post', [
+        'post' => $post
+    ]);
+});
+
+Route::get('categories/{category:slug}', function (Category $category) {
+    return view('posts', [
+        'posts' => $category->posts
+    ]);
+});
+
+Route::get('author/{author:username}', function (User $author) {
+    return view('posts', [
+        'posts' => $author->posts
+    ]);
+});
