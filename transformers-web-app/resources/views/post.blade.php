@@ -12,21 +12,16 @@
         <link rel="stylesheet" href="/app.css">
     </head>
     <body class="antialiased">
-        <x-includes/>
-        @foreach ($posts as $post)
-            <article>
-                <h1>
-                    <a href="/posts/{{ $post->slug; }}">{!! $post->title !!}</a>
-                </h1>
+        <article>
+            <h1>{!! $post->title !!}</h1>
 
-                <p>
-                    By <a href="/author/{{ $post->author->username }}">{{ $post->author->name }}</a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
-                </p>
+            <p>
+                By <a href="/author/{{ $post->author->username }}">{{ $post->author->name }}</a> in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a>
+            </p>
 
-                <div>
-                    {{ $post->excerpt }}
-                </div>
-            </article>
-        @endforeach
+            <div>{!! $post->body !!}</div>
+        </article>
+    <br>
+    <strong><a href="/" style="color:orange;">Go Back</a></strong>
     </body>
 </html>
