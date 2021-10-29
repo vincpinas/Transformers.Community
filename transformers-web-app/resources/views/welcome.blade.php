@@ -14,7 +14,7 @@
     </head>
     <body class="antialiased c-text-font">
         {{-- Anonymous button --}}
-        <button class="hoverbutton">
+        <button class="hoverbutton" onclick="">
           <i class="fas fa-comment-dots"></i>
         </button>
 

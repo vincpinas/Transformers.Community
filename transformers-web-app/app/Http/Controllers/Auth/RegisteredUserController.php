@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use Faker\Factory as Faker;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
@@ -13,6 +14,7 @@ use Illuminate\Validation\Rules;
 
 class RegisteredUserController extends Controller
 {
+
     /**
      * Display the registration view.
      *
@@ -42,6 +44,7 @@ class RegisteredUserController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
+            'username' => Faker::create()->uuid,
             'password' => Hash::make($request->password),
         ]);
 

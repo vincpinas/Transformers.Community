@@ -24,7 +24,7 @@ class PostFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => User::factory(),
+            'user_id' => $this->faker->biasedNumberBetween($min = 1, $max = 5, $function = 'sqrt'),
             'category_id' => Category::factory(),
             'title' => $this->faker->sentence,
             'slug' => $this->faker->slug,

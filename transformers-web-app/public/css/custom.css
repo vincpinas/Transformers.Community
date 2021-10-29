@@ -104,3 +104,8 @@ h3 {
         max-width: 30%;
     }
 }
+
+.c-post-card {
+    padding: 20px;
+    border: 2px solid var(--dark-orange);
+}
