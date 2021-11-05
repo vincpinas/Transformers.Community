@@ -8,9 +8,9 @@ use App\Http\Controllers\PostController;
 require __DIR__.'/auth.php';
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PostController::class, "homePageData"]);
+Route::post('/posts/save', [PostController::class, "savePost"])->name("post.save");
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -18,6 +18,6 @@ Route::get('/dashboard', function () {
 
 // Post/Topics routes
 Route::get('/feed', [PostController::class, "latestPost"]);
-Route::get('posts/{post:slug}', [PostController::class, "showPost"]);
+Route::get('bericht/{post:slug}', [PostController::class, "showPost"])->name("post.show");
 Route::get('categories/{category:slug}', [PostController::class, "filterCategories"]);
 Route::get('author/{author:username}', [PostController::class, "filterAuthors"]);

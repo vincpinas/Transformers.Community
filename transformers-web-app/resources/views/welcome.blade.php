@@ -13,8 +13,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     </head>
     <body class="antialiased c-text-font">
+        {{-- Overlay --}}
+        <div id="overlay">
+          <div class="overlay-inner c-tb">
+            <button class="close-btn" onclick="removeOverlay()">&#10005;</button>
+            <div class="popup-headers">
+              <h3>Make A Post!</h3>
+              <h4>You can make your own anonymous post here.</h4>
+            </div>
+            <form method="POST" action="{{ route("post.save") }}" id="anoForm">
+              @csrf
+              <input type="text" name="title" placeholder="Title" required/>
+              <input type="text" name="excerpt" placeholder="excerpt" required/>
+              <input type="text" name="body" placeholder="Type your question/advice here..." required/>
+              <input list="categoriesList" name="category" required>
+              <input type="submit" value="Submit" style="margin-top:10px;" class="btn c-imp-button">
+            </form>
+            <datalist id="categoriesList">
+              @foreach ($categories as $category)
+                <option value="{{ $category->name }}"></option>
+              @endforeach
+            </datalist>
+          </div>
+        </div>
+
         {{-- Anonymous button --}}
-        <button class="hoverbutton" onclick="">
+        <button class="hoverbutton" onclick="setOverlay()">
           <i class="fas fa-comment-dots"></i>
         </button>
 
@@ -30,7 +54,7 @@
               <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
-                    <a class="nav-link c-tw"  href="#">Home</a>
+                    <a class="nav-link c-tw"  href="/">Home</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link c-tw" href="/feed">Feed</a>
@@ -156,5 +180,14 @@
             <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5 m-4">Doneer</a>
           </div>
         </div>
+
+        <script>
+          function setOverlay() {
+            document.getElementById("overlay").style.display = "flex";
+          }
+          function removeOverlay() {
+            document.getElementById("overlay").style.display = "none";
+          }
+        </script>
     </body>
 </html>
