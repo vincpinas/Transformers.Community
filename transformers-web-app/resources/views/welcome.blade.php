@@ -140,13 +140,13 @@
 
 
         {{-- Mission / Vision Section  --}}
-        <div class="c-tb text-center">
+        <div class="c-tb text-center" style="display:flex;justify-content:center;align-items:center;flex-direction:column;">
           <h2 class="c-titles-font">Wij zijn een groeiende beweging van jongeren die zich <br> inzet voor <span class="c-underline">mentale gezondheid.</span></h2>
           <br>
-          <p>
-            We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid.<br>
-            <span class="fw-bold">Daar willen wij samen verandering in brengen!</span> We zijn een community van jongeren die<br>
-            <span class="fw-bold">ervaringen en tips</span> uitwisselt op het gebied van <span class="fw-bold">mentale gezondheid</span> en persoonlijke<br>
+          <p style="max-width:60%">
+            We leven in een samenleving waar onvoldoende ruimte is voor onze mentale gezondheid.
+            <span class="fw-bold">Daar willen wij samen verandering in brengen!</span> We zijn een community van jongeren die
+            <span class="fw-bold">ervaringen en tips</span> uitwisselt op het gebied van <span class="fw-bold">mentale gezondheid</span> en persoonlijke
             ontwikkeling. Zo creëren we meer openheid <span class="fw-bold">en helpen we elkaar om te groeien.</span>
           </p>
           <a href="#" class="btn c-titles-font c-imp-button mt-10 pt-2 pb-2 ps-5 pe-5">Onze missie en visie</a>
