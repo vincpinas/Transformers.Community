@@ -19,7 +19,11 @@
             <button class="close-btn" onclick="removeOverlay()">&#10005;</button>
             <div class="popup-headers">
               <h3>Make A Post!</h3>
-              <h4>You can make your own anonymous post here.</h4>
+                @if (Auth::check())
+                      <h4 style="text-align:center;">Maak hier een post die alleen te zien is door andere transformers.</h4>
+                @else
+                      <h4 style="text-align:center;">Maak hier een anonieme post voor iedereen om te zien.</h4>
+                @endif
             </div>
             <form method="POST" action="{{ route("post.save") }}" id="anoForm">
               @csrf
