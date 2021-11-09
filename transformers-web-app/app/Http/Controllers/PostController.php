@@ -15,11 +15,13 @@ class PostController extends Controller
     public function latestPost() {
         if (Auth::check()) {
             return view('posts', [
-                'posts' => Post::latest()->get()
+                'posts' => Post::latest()->get(),
+                'categories' => Category::all()
             ]);
         } else {
             return view('posts', [
-                'posts' => Post::latest()->where('user_id', '=', 1)->get()
+                'posts' => Post::latest()->where('user_id', '=', 1)->get(),
+                'categories' => Category::all()
             ]);
         }
     }

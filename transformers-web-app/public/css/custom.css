@@ -112,9 +112,14 @@ h4 {
 
 .c-post-card {
     padding: 20px;
-    border: 1px solid var(--dark-orange);
+    border: 1.5px solid var(--purple);
     display: flex;
     align-items: center;
+    transition: all 0.2s;
+}
+
+.c-post-card:hover {
+    border: 3px solid var(--dark-orange);
 }
 
 .text-ellipsis {

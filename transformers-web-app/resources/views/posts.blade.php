@@ -19,6 +19,39 @@
         <link rel="stylesheet" href="/app.css">
     </head>
     <body class="antialiased c-text-font">
+      <div id="overlay">
+        <div class="overlay-inner c-tb">
+          <button class="close-btn" onclick="removeOverlay()">&#10005;</button>
+          <div class="popup-headers">
+            <h3>Make A Post!</h3>
+              @if (Auth::check())
+                    <h4 style="text-align:center;">Maak hier een post die alleen te zien is door andere transformers.</h4>
+              @else
+                    <h4 style="text-align:center;">Maak hier een anonieme post voor iedereen om te zien.</h4>
+              @endif
+          </div>
+          <form method="POST" action="{{ route("post.save") }}" id="anoForm">
+            @csrf
+            <input type="text" name="title" placeholder="Title" required/>
+            <input type="text" name="excerpt" placeholder="excerpt" required/>
+            <input type="text" name="body" placeholder="Type your question/advice here..." required/>
+            <input list="categoriesList" name="category" required>
+            <input type="submit" value="Submit" style="margin-top:10px;" class="btn c-imp-button">
+          </form>
+          <datalist id="categoriesList">
+            @foreach ($categories as $category)
+              <option value="{{ $category->name }}"></option>
+            @endforeach
+          </datalist>
+        </div>
+      </div>
+
+      {{-- Anonymous button --}}
+      <button class="hoverbutton" onclick="setOverlay()">
+        <i class="fas fa-comment-dots"></i>
+      </button>
+
+
         <nav class="navbar navbar-expand-lg navbar-light c-bg-purple c-tw">
             <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
@@ -84,5 +117,14 @@
             </article>
         @endforeach
         </div>
+
+        <script>
+          function setOverlay() {
+            document.getElementById("overlay").style.display = "flex";
+          }
+          function removeOverlay() {
+            document.getElementById("overlay").style.display = "none";
+          }
+        </script>
     </body>
 </html>
