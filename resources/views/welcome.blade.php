@@ -77,7 +77,12 @@
                     @if (Route::has('login'))
                         <div class="d-flex align-items-center">
                             @auth
-                                <a href="{{ url('/dashboard') }}" class="btn c-titles-font c-imp-button m-2">Dashboard</a>
+                              <div>
+                                <form method="POST" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button class="btn c-titles-font c-imp-button">{{ __('Log Out') }}</button>
+                                </form>
+                              </div>
                             @else
                                 @if (Route::has('register'))
                                     <a href="{{ route('register') }}" class="btn c-titles-font c-link-cw">Register</a>

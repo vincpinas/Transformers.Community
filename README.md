@@ -39,7 +39,7 @@
 <h4 align="center">  
   <a href="https://trello.com/b/m36Zy4kL/periode-1-transformers-community">Trello Board</a>
   <strong> · </strong>
-  <a href="#">Live</a>
+  <a href="https://vincent.student-sd.site/">Live</a>
   <strong> · </strong>
   <a href="UPDATES.md">Documentation</a>
 </h4>
@@ -63,5 +63,5 @@ ___This project is written in Laravel using blade and eloquent that already come
 [php.net]: https://www.php.net/
 [laravel]: https://laravel.com/docs/8.x
 [Transformers.Community Trello Board]: https://trello.com/b/m36Zy4kL/periode-1-transformers-community
-[Transformers.Community Demo]: http
+[Transformers.Community Demo]: https://vincent.student-sd.site/
 [Transformers.Community]: https://transformers.community/
