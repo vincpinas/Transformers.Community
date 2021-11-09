@@ -29,20 +29,28 @@ class PostController extends Controller
     public function filterAuthors (User $author) {
         if (Auth::check()) {
             return view('posts', [
-                'posts' => $author->posts
+                'posts' => $author->posts,
+                'categories' => Category::all()
             ]);
         } else {
-
+            return view('posts', [
+                'posts' => $author->posts->where('user_id', '=', 1),
+                'categories' => Category::all()
+            ]);
         }
     }
 
     public function filterCategories (Category $category) {
         if (Auth::check()) {
             return view('posts', [
-                'posts' => $category->posts
+                'posts' => $category->posts,
+                'categories' => Category::all()
             ]);
         } else {
-
+            return view('posts', [
+                'posts' => $category->posts->where('user_id', '=', 1),
+                'categories' => Category::all()
+            ]);
         }
     }
     
